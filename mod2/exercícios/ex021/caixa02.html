@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: rgb(169, 171, 171);
+            margin: 0px;
+            font-family: arial;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(107, 107, 107);
+            align-items: center;
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.437);
+            justify-content: space-between;
+            padding: 0 3%;
+        }
+        header>button{
+            background: none;
+            border: none;
+            color: black;
+            font-weight: bold;
+            display: none;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+        nav>a{
+            text-decoration: none;
+            color: white;
+            transition: 0.5s;
+            font-weight: bold;
+            background-color: rgb(140, 133, 133);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        nav>a:active{
+            color: white;
+        }
+        nav>a:hover{
+            background-color: rgb(165, 158, 158);
+            text-decoration: underline;
+            color: rgb(0, 0, 0);
+        }
+        main{
+            margin: 20px;
+            padding: 10px;
+            text-align: justify;
+            background-color: white;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.388);
+            border-radius: 100px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 10px;
+        }
+        h2{
+            text-align: center;
+        }
+        footer{
+            background-color: black;
+            color: wheat;
+            padding: 2px;
+            margin: 0px;
+            text-align: center;
+        }
+        article{
+            background-color: rgb(188, 188, 188);
+            margin: 20px;
+            border-radius: 0px 60px 60px 0px;
+            padding: 10px;
+        }
+        article>aside{
+            color: darkred;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button>X</button>
+        <button>-</button>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="esportes">
+            <p>Esportes</p>
+            <article>
+                <h2>Esportes bons demais</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus inventore eos architecto eaque ut vero fugit odio provident consectetur? Soluta ducimus voluptatibus eum architecto esse fugit, sed fuga asperiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ullam et magnam amet modi eaque nam alias ipsa explicabo laborum repellat tempore aliquam fugit corporis eligendi repellendus, sint omnis ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam harum fugiat possimus quos vero provident illum neque enim, sequi, maxime nulla cum in maiores repudiandae distinctio, exercitationem at! Temporibus, cum!</p>
+                <aside>Artigo escrito por ninguém.</aside>
+            </article>
+        </section>
+        <section id="notícias">
+            <p>Notícias</p>
+            <article>
+                <h2>Notícia do Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus inventore eos architecto eaque ut vero fugit odio provident consectetur? Soluta ducimus voluptatibus eum architecto esse fugit, sed fuga asperiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ullam et magnam amet modi eaque nam alias ipsa explicabo laborum repellat tempore aliquam fugit corporis eligendi repellendus, sint omnis ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam harum fugiat possimus quos vero provident illum neque enim, sequi, maxime nulla cum in maiores repudiandae distinctio, exercitationem at! Temporibus, cum!</p>
+                <aside>Artigo escrito por ninguém.</aside>
+            </article>
+        </section>
+    </main>
+    <footer>Criado pelo @Brenin</footer>
+</body>
+</html>
