@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        :root{
+            --cor1: #d5d9e2;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: var(--cor1);
+        }
+        td.numero{
+            text-align: right;
+        }
+        thead, tfoot{
+            text-align: center;
+            background-color: var(--cor1);
+        }
+        #numeracao{
+            background-color: var(--cor1);
+            width: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD
+            TR, TD, TH
+
+        TBODY
+            TR, TD, TH
+
+        TFOOT
+            TR, TD, TH
+    -->
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+              <th></th>
+              <th scope="col">Unidade Federativa</th>
+              <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="numero" id="numeracao">1</td>
+                <td><a href="#">São Paulo</a></td>
+                <td class="numero">45 973 194</td>
+            </tr>
+            <tr>
+                <td class="numero" id="numeracao">2</td>
+                <td><a href="#">Minas Gerais</a></td>
+                <td class="numero">21 322 691</td>
+            </tr>
+            <tr>
+                <td class="numero" id="numeracao">3</td>
+                <td><a href="#">Rio de Janeiro</a></td>
+                <td class="numero">17 219 679</td>
+            </tr>
+            <tr>
+                <td class="numero" id="numeracao">4</td>
+                <td><a href="#">Bahia</a></td>
+                <td class="numero">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="numero" id="numeracao">5</td>
+                <td><a href="#">Paraná</a></td>
+                <td class="numero">11 824 665</td>
+            </tr>
+            <tr>
+                <td class="numero" id="numeracao">6</td>
+                <td><a href="#">Rio Grande do Sul</a></td>
+                <td class="numero">11 229 915</td>
+            </tr>
+            <tr>
+                <td class="numero" id="numeracao">7</td>
+                <td><a href="#">Pernambuco</a></td>
+                <td class="numero">9 539 029</td>
+            </tr>
+            <tr>
+                <td class="numero" id="numeracao">8</td>
+                <td><a href="#">Ceará</a></td>
+                <td class="numero">9 233 656</td>
+            </tr>
+            <tr>
+                <td class="numero" id="numeracao">9</td>
+                <td><a href="#">Pará</a></td>
+                <td class="numero">8 664 306</td>
+            </tr>
+            <tr>
+                <td class="numero" id="numeracao">10</td>
+                <td><a href="#">Santa Catarina</a></td>
+                <td class="numero">8 058 441</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></th>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>148.686.174</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
