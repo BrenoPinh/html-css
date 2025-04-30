@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*
+
+Extra small devices (phones): 600px and down
+Small tablets: 601px – 768px
+Laptops and small desktops: 1025px – 1280px
+Large desktops and high-resolution screens: 1281px – 1440px
+Extra-large desktops: 1441px and up
+*/
+
+@media screen and (min-width: 768px) /*Tablet*/ {
+    main{
+        max-width: 500px;
+    }
+    i#burguer{
+        display: none;
+    }
+    menu#menu{
+        display: block;
+    }
+    menu#menu>ul{
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.5vw;
+    }
+}
