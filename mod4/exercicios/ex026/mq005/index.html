@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="aparecerMenu()">menu</i>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatibus voluptates sed laboriosam, accusantium, nam repellendus amet hic in quo cum sint provident ipsam quia nesciunt maiores commodi vero sapiente.
+                Fugiat blanditiis sint illum adipisci! Blanditiis, totam voluptate. Officiis perspiciatis inventore sint saepe eius fugiat repudiandae ullam laboriosam perferendis cumque modi ab iusto aspernatur dolorem, nobis nulla tenetur porro accusantium!
+                Quis, pariatur? Earum totam esse voluptates aspernatur deserunt id exercitationem rem magni officia fuga velit illo vel possimus dignissimos, at iure est tempore a, delectus minima nulla eaque illum. Saepe!
+           </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit, dignissimos assumenda debitis praesentium minus voluptatem. Odit ratione cum maiores consectetur neque, possimus quis doloribus ipsa! Quibusdam dolores accusamus vel.
+                Voluptate laudantium nesciunt doloremque magnam deserunt inventore voluptates ratione numquam porro, quibusdam, quos voluptatum. Nostrum debitis cum voluptate suscipit ipsam eius, voluptatum ea expedita quibusdam dolor nisi saepe amet non.
+                Tempore ducimus perspiciatis quis vero minus ullam amet quo magnam rerum doloribus et, modi veritatis unde quibusdam aperiam doloremque, iste itaque quod! Nobis soluta exercitationem, iusto culpa saepe necessitatibus labore.
+            </p>
+        </article>
+    </main>
+    <script>
+        var menu = document.getElementById("menu")
+        function aparecerMenu(){
+            if (menu.style.display == "block") {
+                menu.style.display = "none"
+            } else{
+                menu.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
