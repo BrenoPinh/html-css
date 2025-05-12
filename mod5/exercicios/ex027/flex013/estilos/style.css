@@ -11,13 +11,15 @@
 }
 
 body{
-    width: 97vw;
+    width: 100vw;
     height: 100vh;
 
     background-color: lightgray;
 }
 
 header{
+    display: flex;
+    flex-flow: column nowrap;
     background-color: gray;
 
     padding-bottom: 10px;
@@ -41,9 +43,20 @@ header>menu>nav>ul{
     gap: 7px;
 }
 
+header>menu>nav>ul>li{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header>menu>nav>ul>li>a{
+    display: flex;
+    justify-content: center;
+}
+
 header>menu>nav>ul>li>a>button{
     padding: 10px;
-
+    
+    flex: 0 0 500px;
     text-align: center;
     background-color: black;
     color: white;
@@ -65,7 +78,7 @@ header>menu>nav>ul>li>a{
 }
 
 main{
-    max-width: 500px;
+    max-width: 450px;
     padding: 15px;
 
     margin: auto;

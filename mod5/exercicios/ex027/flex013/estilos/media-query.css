@@ -1,17 +1,31 @@
 @charset "UTF-8";
 
 
-/* Telas pequenas/celular */
-@media screen and (max-width: 600px){
-
-}
-
 /* Telas médias/tablet */
 @media screen and (min-width: 601px){
-    
+
+header{
+    flex-flow: row nowrap; 
+    padding: 0px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>menu>nav>ul{
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+header>menu>nav>ul>li>a>button{
+    flex: 0 0 100px;
+    padding: 10px;
+    margin: 5px;
+}
+
 }
 
 /* Telas grandes/desktop */
 @media screen and (min-width: 992px){
-    
+
 }
